@@ -1,0 +1,10 @@
+
+    def changestatus(self,d):
+        if d==0:
+            #playsound(data,True)
+            self.status='play'
+            pygame.mixer.music.unpause()
+        else:
+            #playsound(data,False)
+            pygame.mixer.music.pause()
+            self.status="pause"
